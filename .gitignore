@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+# echte Konfiguration und Anmeldedaten -- nie einchecken
+.env
+.env.*
+config.json
+token_cache.json
