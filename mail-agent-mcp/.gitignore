@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# echte Konfiguration und Anmeldedaten -- nie einchecken
+config.json
+token_cache.json
+sortier-regeln.json
+aufgaben-regeln.json

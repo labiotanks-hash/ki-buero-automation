@@ -1,0 +1,30 @@
+{
+  "_hinweis": "Regelwerk fürs Sortieren. Gematcht wird gegen die Absenderadresse (Teilstring). Nur Versand- und Systemadressen eintragen, keine Adressen echter Menschen -- vorher mit mails_suchen prüfen, wer dahinter steckt.",
+  "chef": {
+    "regeln": [
+      {
+        "ordner": "Automatisch/Newsletter",
+        "aktiv": true,
+        "beschreibung": "Fachverlage, Fortbildungswerbung, Branchen-Newsletter",
+        "von": ["newsletter@", "baufachverlag.example"]
+      },
+      {
+        "ordner": "Automatisch/Systemmeldungen",
+        "aktiv": true,
+        "beschreibung": "Benachrichtigungen von Software-Diensten und Shops",
+        "von": ["noreply@", "no-reply@"]
+      },
+      {
+        "ordner": "Projekte/Wohnhaus Lindenweg",
+        "aktiv": false,
+        "beschreibung": "Projektsortierung: vorbereitet, erst nach Abstimmung mit dem Kunden einschalten",
+        "von": []
+      }
+    ]
+  },
+  "info": {
+    "regeln": [
+      { "ordner": "Automatisch/Newsletter", "aktiv": true, "beschreibung": "Newsletter", "von": ["newsletter@"] }
+    ]
+  }
+}

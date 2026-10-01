@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mail-agent-demo": {
+      "command": "uv",
+      "args": ["--directory", "/ABSOLUTER/PFAD/ki-buero-automation/mail-agent-mcp", "run", "mail-agent-mcp"],
+      "env": {
+        "MAIL_AGENT_BACKEND": "demo"
+      }
+    }
+  }
+}
