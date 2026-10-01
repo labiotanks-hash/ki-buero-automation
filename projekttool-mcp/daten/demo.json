@@ -1,0 +1,63 @@
+{
+  "_hinweis": "Frei erfundene Demodaten. Projekte, Orte, Firmen und Beträge sind ausgedacht. Die Daten enthalten absichtlich Widersprüche, damit die Datenprüfung etwas zu finden hat.",
+  "stundensatz_intern_eur": 70,
+  "projekte": [
+    {
+      "id": "p-lindenweg",
+      "name": "Wohnhaus Lindenweg",
+      "ort": "Beispielstadt",
+      "auftraggeber": "Bauherrengemeinschaft Muster",
+      "status": "LPH 8 Objektüberwachung",
+      "aktiv": true
+    },
+    {
+      "id": "p-sonnenhang",
+      "name": "Kita Sonnenhang",
+      "ort": "Musterdorf",
+      "auftraggeber": "Gemeinde Musterdorf",
+      "status": "LPH 5 Ausführungsplanung",
+      "aktiv": true
+    },
+    {
+      "id": "p-muehlgasse",
+      "name": "Dachausbau Mühlgasse",
+      "ort": "Beispielstadt",
+      "auftraggeber": "Privat (Demo)",
+      "status": "abgeschlossen",
+      "aktiv": false
+    }
+  ],
+  "honorar": {
+    "leistungen": [
+      { "id": "l-101", "projekt_id": "p-lindenweg", "name": "LPH 1-4 Entwurf und Genehmigung", "angeboten_eur": 38000, "abgerechnet_eur": 38000, "bezahlt_eur": 38000, "ist_stunden": 520 },
+      { "id": "l-102", "projekt_id": "p-lindenweg", "name": "LPH 5 Ausführungsplanung", "angeboten_eur": 30000, "abgerechnet_eur": 12000, "bezahlt_eur": 12000, "ist_stunden": 320 },
+      { "id": "l-103", "projekt_id": "p-lindenweg", "name": "LPH 8 Objektüberwachung", "angeboten_eur": 26000, "abgerechnet_eur": 6000, "bezahlt_eur": 6000, "ist_stunden": 110 },
+      { "id": "l-201", "projekt_id": "p-sonnenhang", "name": "LPH 1-4 Entwurf und Genehmigung", "angeboten_eur": 52000, "abgerechnet_eur": 52000, "bezahlt_eur": 46000, "ist_stunden": 760 },
+      { "id": "l-202", "projekt_id": "p-sonnenhang", "name": "LPH 5 Ausführungsplanung", "angeboten_eur": 41000, "abgerechnet_eur": 8000, "bezahlt_eur": 8000, "ist_stunden": 520 },
+      { "id": "l-301", "projekt_id": "p-muehlgasse", "name": "LPH 1-8 Gesamtleistung", "angeboten_eur": 21000, "abgerechnet_eur": 21000, "bezahlt_eur": 21000, "ist_stunden": 250 }
+    ]
+  },
+  "baukosten": {
+    "vergabeeinheiten": [
+      { "id": "ve-11", "projekt_id": "p-lindenweg", "nummer": "300", "name": "Rohbau", "status": "beauftragt", "auftragnehmer": "Rohbau Beispiel GmbH", "planbudget_eur": 180000, "auftragssumme_eur": 172500, "prognose_manuell_eur": null },
+      { "id": "ve-12", "projekt_id": "p-lindenweg", "nummer": "340", "name": "Elektro", "status": "beauftragt", "auftragnehmer": "Elektro Muster KG", "planbudget_eur": 42000, "auftragssumme_eur": 39800, "prognose_manuell_eur": null },
+      { "id": "ve-13", "projekt_id": "p-lindenweg", "nummer": "360", "name": "Malerarbeiten", "status": "ausgeschrieben", "auftragnehmer": null, "planbudget_eur": 18000, "auftragssumme_eur": null, "prognose_manuell_eur": null },
+      { "id": "ve-21", "projekt_id": "p-sonnenhang", "nummer": "300", "name": "Rohbau", "status": "beauftragt", "auftragnehmer": null, "planbudget_eur": 240000, "auftragssumme_eur": null, "prognose_manuell_eur": null },
+      { "id": "ve-22", "projekt_id": "p-sonnenhang", "nummer": "330", "name": "Holzbau", "status": "geplant", "auftragnehmer": null, "planbudget_eur": 95000, "auftragssumme_eur": null, "prognose_manuell_eur": 112000 },
+      { "id": "ve-31", "projekt_id": "p-muehlgasse", "nummer": "330", "name": "Zimmerer", "status": "abgeschlossen", "auftragnehmer": "Holzbau Beispiel GmbH", "planbudget_eur": 60000, "auftragssumme_eur": 64000, "prognose_manuell_eur": null }
+    ],
+    "nachtraege": [
+      { "id": "n-1", "vergabeeinheit_id": "ve-12", "nummer": "NT-1", "bezeichnung": "Zusätzliche Steckdosen OG", "betrag_eur": 1200, "status": "beauftragt" },
+      { "id": "n-2", "vergabeeinheit_id": "ve-12", "nummer": "NT-2", "bezeichnung": "Leerrohre für Wallbox", "betrag_eur": 2400, "status": "erwartet" }
+    ],
+    "eingangsrechnungen": [
+      { "id": "re-1001", "vergabeeinheit_id": "ve-11", "rechnungsnummer": "AR-1", "betrag_netto_eur": 95000, "rechnungsdatum": "2026-06-05", "faellig_am": "2026-06-26", "status": "bezahlt", "freigegeben_am": "2026-06-12", "bezahlt_am": "2026-06-20" },
+      { "id": "re-1002", "vergabeeinheit_id": "ve-11", "rechnungsnummer": "AR-2", "betrag_netto_eur": 60000, "rechnungsdatum": "2026-09-03", "faellig_am": "2026-09-24", "status": "freigegeben", "freigegeben_am": "2026-09-10", "bezahlt_am": null },
+      { "id": "re-1005", "vergabeeinheit_id": "ve-11", "rechnungsnummer": "AR-2", "betrag_netto_eur": 5000, "rechnungsdatum": "2026-09-18", "faellig_am": "2026-10-30", "status": "erfasst", "freigegeben_am": null, "bezahlt_am": null },
+      { "id": "re-1003", "vergabeeinheit_id": "ve-12", "rechnungsnummer": "R-2026-17", "betrag_netto_eur": 28000, "rechnungsdatum": "2026-07-14", "faellig_am": "2026-08-04", "status": "bezahlt", "freigegeben_am": "2026-07-20", "bezahlt_am": null },
+      { "id": "re-1004", "vergabeeinheit_id": "ve-12", "rechnungsnummer": "R-2026-23", "betrag_netto_eur": 14500, "rechnungsdatum": "2026-09-24", "faellig_am": "2026-10-15", "status": "erfasst", "freigegeben_am": null, "bezahlt_am": null },
+      { "id": "re-2001", "vergabeeinheit_id": "ve-21", "rechnungsnummer": "AB-1", "betrag_netto_eur": 25000, "rechnungsdatum": "2026-09-22", "faellig_am": "2026-10-20", "status": "erfasst", "freigegeben_am": null, "bezahlt_am": null },
+      { "id": "re-3001", "vergabeeinheit_id": "ve-31", "rechnungsnummer": "SR-1", "betrag_netto_eur": 64000, "rechnungsdatum": "2025-11-10", "faellig_am": "2025-12-01", "status": "bezahlt", "freigegeben_am": "2025-11-18", "bezahlt_am": "2025-11-30" }
+    ]
+  }
+}

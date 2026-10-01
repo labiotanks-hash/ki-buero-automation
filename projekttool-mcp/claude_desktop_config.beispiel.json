@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "projekttool-demo": {
+      "command": "node",
+      "args": ["/ABSOLUTER/PFAD/ki-buero-automation/projekttool-mcp/dist/index.js"],
+      "env": {
+        "PROJEKTTOOL_READONLY": "0"
+      }
+    }
+  }
+}

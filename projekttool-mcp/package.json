@@ -1,0 +1,28 @@
+{
+  "name": "projekttool-mcp-demo",
+  "version": "1.0.0",
+  "description": "MCP-Server fuer Projekt-Controlling im Architekturbuero: Honorar und Baukosten getrennt, Vorschau vor jedem Schreibzugriff. Demo mit lokaler JSON-Datenbank.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "projekttool-mcp-demo": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "tsc && node --test test/*.test.mjs",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
